@@ -1,0 +1,49 @@
+/*
+Se usa asterisco para que aplique a todo, (como en sql)
+cuando son imagenes pequeñas se repiten esto es para no repetir no repeat
+1 rem es equivalente a 16px 
+    text-transform: uppercase; para convertir a mayúsculas
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white 
+}
+
+.main-image{
+    background: url("imagenes/forest.jpg");
+    background-position: center bottom;
+  
+    background-size: cover;background-repeat: no-repeat; 
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+.main-image h1{
+    font-size: 50px;
+    margin-bottom: 1rem;
+ }
+.main-image p{
+    font-size: 24 px;
+    margin-bottom: 3rem;
+}
+.main-image button{
+    background: none;
+    color: white;
+    border: 2px solid;
+    border-radius: 5%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
